@@ -1,0 +1,61 @@
+body{
+    /* text-align: center; */
+    background-color: aqua;
+    /* margin: auto; */
+    /* justify-content: center; */
+    background: url(shutterstock_582803470.png);
+    background-size:cover;
+}
+
+h1{
+    margin: 40px auto 10px auto;
+    color: white;
+    font-family:sans-serif;
+    text-align: center;
+}
+#description{
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+#survey-form{
+    background-color: rgba(8,207,225,0.7);
+    padding: 40px;
+    line-height: 30px;
+    width: 50%;
+    align-items: center;
+    margin: auto;
+    color: whitesmoke;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+label{
+    display: block;
+    font-size: 18px;
+    font-family: sans-serif;
+    padding-top: 10px;
+}
+
+#name, #email, #number, #dropdown, #comments, #submit{
+    width: 95%;
+    height: 30px;
+}
+
+/* input[type=radio]{
+    font-size: large;
+} */
+
+p{
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+#submit{
+    background-color: #80FFDB;
+    height: 40px;
+    border-color: #80FFD8;
+    border-radius: 16px;
+}
