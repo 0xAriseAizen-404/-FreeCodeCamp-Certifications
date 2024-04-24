@@ -1,0 +1,118 @@
+:root{
+    --bg-primary: rgb(80,80,240);
+    --bg-secondary: rgb(50,40,140);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+body{
+    background-color: #FFFFFF;
+    color: #000000;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 4rem;
+}
+.navbar .logo img{
+    width: 200px;
+}
+.navbar .nav-items{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+@media (max-width: 600px){
+    .navbar{
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+    .nav-items{
+        padding-bottom: 1rem;
+        padding-top: 2rem;
+    }
+}
+.description-product a{
+    display: inline-block;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    border: 2px solid #FFFFFF;
+    border-radius: 6px;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+.description-product a:hover{
+    background-color: #FFFFFF;
+    color: var(--bg-secondary);
+    transition: all 0.3s linear;
+}
+.landing-product{
+    background: linear-gradient(to right, var(--bg-secondary), var(--bg-primary));
+    /* height: 400px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #FFFFFF;
+    flex-wrap: wrap;
+    padding: 0 5rem;
+}
+.product-img img{
+    height: 400px;
+    width: 230px;
+}
+.description-produc{
+    flex: 1;
+    padding: 4rem 0;
+}
+.product-img{
+    flex: 1;
+}
+.description-product p{
+    margin: 2rem 0;
+    font-size: 20px;
+}
+.why-section{
+    padding: 2rem;
+    text-align: center;
+}
+.why-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.why-card{
+    padding: 1rem;
+    border: 2px solid rgba(230, 230, 230,0.4);
+    border-radius: 8px;
+    margin: 1rem;
+    text-align: center;
+}
+.why-card i{
+    display: block;
+    font-size: 50px;
+    margin: 1rem;
+}
+.why-card span{
+    display: inline-block;
+    margin: 1rem;
+    font-weight: 500;
+    font-size: 18px;
+}
+.why-card p{
+    margin: 1rem;
+}
+.why-cards > .why-card{
+    flex-grow: 1;
+    width: 30%;
+}
